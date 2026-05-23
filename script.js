@@ -10,31 +10,32 @@ function updateOpenStatus() {
   const kitchen = 16 * 60;   // 16:00
   const close   = 17 * 60;   // 17:00
 
-  let state, label, detail;
+  let state, label, labelShort, detail;
   if (mins < open) {
-    state  = 'is-closed';
-    label  = 'Cerrado';
+    state = 'is-closed';
+    label = 'Cerrado'; labelShort = 'Cerrado';
     detail = 'Abre hoy a las 9:00';
   } else if (mins < kitchen) {
-    state  = 'is-open';
-    label  = 'Abierto ahora';
+    state = 'is-open';
+    label = 'Abierto ahora'; labelShort = 'Abierto';
     detail = 'Cocina hasta las 16:00';
   } else if (mins < close) {
-    state  = 'is-cafe-only';
-    label  = 'Solo café';
+    state = 'is-cafe-only';
+    label = 'Solo café'; labelShort = 'Solo café';
     detail = 'Cocina cerrada · cierre 17:00';
   } else {
-    state  = 'is-closed';
-    label  = 'Cerrado';
+    state = 'is-closed';
+    label = 'Cerrado'; labelShort = 'Cerrado';
     detail = 'Abre mañana a las 9:00';
   }
 
-  // Badge del nav
+  // Badge del nav (texto corto en móvil)
   const navStatus = document.getElementById('navStatus');
   if (navStatus) {
     navStatus.classList.remove('is-open', 'is-cafe-only', 'is-closed');
     navStatus.classList.add(state);
-    navStatus.querySelector('.nav__status-label').textContent = label;
+    const isMobile = window.matchMedia('(max-width: 900px)').matches;
+    navStatus.querySelector('.nav__status-label').textContent = isMobile ? labelShort : label;
     navStatus.setAttribute('title', `${label} · ${detail}`);
   }
 

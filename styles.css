@@ -792,8 +792,15 @@ h3 { font-size: 1.4rem; }
   }
   .nav__links.is-open { transform: translateY(0); }
   .nav__cta { display: none; }
-  .nav__status { padding: 6px 10px; font-size: 11px; }
-  .nav__status-label { display: none; }
+  .nav__status {
+    padding: 7px 12px;
+    font-size: 11px;
+    background: rgba(245,237,228,.12);
+    border-color: rgba(245,237,228,.2);
+    margin-left: auto;
+    margin-right: 12px;
+  }
+  .nav__status-label { display: inline; }
   .nav__burger { display: flex; }
 
   .section { padding: 80px 0; }
@@ -811,4 +818,7 @@ h3 { font-size: 1.4rem; }
   .hero { padding: 100px 20px 60px; }
   .hero__actions { flex-direction: column; align-items: stretch; }
   .btn { text-align: center; }
+  .nav__logo { width: 70px; }
+  .nav__status { padding: 6px 10px; font-size: 10px; gap: 6px; }
+  .nav__status-dot { width: 7px; height: 7px; }
 }
