@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURA Kaffeina · Brunch & Specialty Coffee · Ruzafa, Valencia</title>
+  <meta name="description" content="AURA Kaffeina — Brunch y café de especialidad en el corazón de Ruzafa, Valencia. Brunch hasta las 16:00, café hasta las 17:00." />
+  <meta property="og:title" content="AURA Kaffeina · Brunch & Specialty Coffee" />
+  <meta property="og:description" content="Brunch y café de especialidad en Ruzafa, Valencia." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <a href="#top" class="nav__logo" aria-label="AURA Kaffeina inicio">
+      <svg viewBox="0 0 120 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <text x="60" y="36" text-anchor="middle" font-family="Dancing Script, cursive" font-size="34" font-weight="700" fill="currentColor">AU.RA</text>
+      </svg>
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#about">El lugar</a>
+      <a href="#carta">Carta</a>
+      <a href="#hours">Horario</a>
+      <a href="#gallery">Galería</a>
+      <a href="#visit">Cómo llegar</a>
+    </nav>
+    <a href="#hours" class="nav__status" id="navStatus" aria-live="polite">
+      <span class="nav__status-dot"></span>
+      <span class="nav__status-label">—</span>
+    </a>
+    <a href="tel:+34612422574" class="nav__cta">612 422 574</a>
+    <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="eyebrow">Ruzafa · Valencia</p>
+      <h1 class="hero__logo">
+        <span class="hero__logo-script">AU.RA</span>
+        <span class="hero__logo-sub">Kaffeina · Brunch & Specialty Coffee</span>
+      </h1>
+      <p class="hero__tag">Café de especialidad, brunch sin prisa y un rincón con luz propia en el barrio.</p>
+      <div class="hero__actions">
+        <a href="#visit" class="btn btn--primary">Cómo llegar</a>
+        <a href="tel:+34612422574" class="btn btn--ghost">612 422 574</a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Bajar a contenido">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container about__grid">
+      <div class="about__text">
+        <p class="eyebrow">El lugar</p>
+        <h2>Un brunch despacio,<br/>un café que se nota.</h2>
+        <p>
+          AURA Kaffeina nace en Ruzafa como un espacio para parar.
+          Tostamos la conversación a fuego lento y servimos café de
+          especialidad acompañado de un brunch pensado para empezar
+          —o alargar— el día.
+        </p>
+        <p>
+          Producto de proximidad, masa madre, fruta de temporada y
+          un equipo que mima cada plato como si fuera el primero.
+        </p>
+        <ul class="about__chips">
+          <li>Specialty Coffee</li>
+          <li>Brunch</li>
+          <li>Opciones veggie</li>
+          <li>Pet friendly</li>
+        </ul>
+      </div>
+      <div class="about__visual">
+        <img class="about__photo about__photo--1" src="images/about-2.png" alt="Sándwich tostado con aguacate y bacon" />
+        <img class="about__photo about__photo--2" src="images/about-1.png" alt="Iced Açaí Latte" />
+        <img class="about__photo about__photo--3" src="images/about-3.png" alt="Mesa con varios platos del brunch" />
+      </div>
+    </div>
+  </section>
+
+  <!-- HOURS -->
+  <section id="hours" class="section hours">
+    <div class="container hours__grid">
+      <div>
+        <p class="eyebrow">Horarios</p>
+        <h2>Abierto todos los días</h2>
+        <p class="lede">
+          Te esperamos cada día de la semana. La cocina y el brunch
+          se sirven hasta las 16:00 — el café sigue hasta cerrar.
+        </p>
+      </div>
+      <div class="hours__panel">
+        <div class="status-big" id="statusBig">
+          <span class="status-big__dot"></span>
+          <span class="status-big__label">—</span>
+          <span class="status-big__detail">—</span>
+        </div>
+        <div class="hours__row">
+          <span>Lunes – Domingo</span>
+          <strong>9:00 — 17:00</strong>
+        </div>
+        <div class="hours__row hours__row--alt">
+          <span>Cocina & Brunch</span>
+          <strong>9:00 — 16:00</strong>
+        </div>
+        <p class="hours__note">Sin día de descanso · Última comanda de cocina 15:45</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow">Galería</p>
+        <h2>El día a día de AURA</h2>
+        <p class="lede">Sustituye estos huecos con tus fotos de Instagram — instrucciones al final.</p>
+      </header>
+      <div class="gallery__grid">
+        <figure class="gallery__item gallery__item--tall" data-placeholder="foto-1.jpg" data-caption="Brunch veggie en la terraza"></figure>
+        <figure class="gallery__item" data-placeholder="foto-2.jpg" data-caption="Bowl con huevo, aguacate y salmón"></figure>
+        <figure class="gallery__item" data-placeholder="foto-3.jpg" data-caption="Pancakes con fruta & cappuccino"></figure>
+        <figure class="gallery__item gallery__item--wide" data-placeholder="foto-4.jpg" data-caption="Tosta de aguacate & matcha latte"></figure>
+        <figure class="gallery__item" data-placeholder="foto-5.jpg" data-caption="Matcha latte ceremonial"></figure>
+        <figure class="gallery__item" data-placeholder="foto-6.jpg" data-caption="Sándwich de huevo & kombucha MŪN"></figure>
+        <figure class="gallery__item gallery__item--tall" data-placeholder="foto-7.jpg" data-caption="Tosta francesa con salmón y aguacate"></figure>
+        <figure class="gallery__item" data-placeholder="foto-8.jpg" data-caption="Açaí bowl & berries smoothie"></figure>
+        <figure class="gallery__item" data-placeholder="foto-9.jpg" data-caption="Tostas francesas con burrata"></figure>
+        <figure class="gallery__item gallery__item--wide" data-placeholder="foto-10.jpg" data-caption="Matcha latte ceremonial"></figure>
+        <figure class="gallery__item" data-placeholder="foto-11.jpg" data-caption="Tarta de chocolate con cappuccino"></figure>
+        <figure class="gallery__item" data-placeholder="foto-12.jpg" data-caption="Tarta de limón merengada"></figure>
+        <figure class="gallery__item" data-placeholder="foto-13.jpg" data-caption="Brunch completo con tomates y huevos"></figure>
+      </div>
+      <p class="gallery__cta">
+        Síguenos en
+        <a href="https://www.instagram.com/aurakaffeina__/" target="_blank" rel="noopener">@aurakaffeina__</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- CARTA -->
+  <section id="carta" class="section carta">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow">Slow food · comida consciente</p>
+        <h2>Nuestra carta</h2>
+        <p class="lede">Todo elaborado en el momento, con ingredientes locales y masa madre fermentada 24 h.</p>
+      </header>
+
+      <div class="menu">
+        <div class="menu__tabs" role="tablist">
+          <button class="menu__tab is-active" data-tab="brunch" role="tab">Brunch</button>
+          <button class="menu__tab" data-tab="tostas" role="tab">Tostas</button>
+          <button class="menu__tab" data-tab="panes" role="tab">Entre panes</button>
+          <button class="menu__tab" data-tab="huevos" role="tab">Huevos & bowls</button>
+          <button class="menu__tab" data-tab="cafe" role="tab">Café</button>
+          <button class="menu__tab" data-tab="frias" role="tab">Bebidas frías</button>
+          <button class="menu__tab" data-tab="bebidas" role="tab">Bebidas</button>
+          <button class="menu__tab" data-tab="dulces" role="tab">Dulces</button>
+        </div>
+
+        <!-- BRUNCH -->
+        <div class="menu__panel is-active" data-panel="brunch">
+          <div class="menu__intro">
+            <strong>Brunch All Inclusive · 17,90 €</strong>
+            <span>Incluye café con leche o infusión, zumo de naranja natural y postre a elección.</span>
+          </div>
+          <div class="menu__cols">
+            <div class="menu__col">
+              <div class="menu__item"><div class="menu__name">Vegano <span class="price">14,90 €</span></div><p>Tosta de hummus, aguacate, cherries, tofu especiado, espinaca salteada con tomates secos y verduras.</p></div>
+              <div class="menu__item"><div class="menu__name">Mediterránea <span class="price">9,90 €</span></div><p>Tofu especiado, espinacas salteadas, tomates secos y rúcula.</p></div>
+              <div class="menu__item"><div class="menu__name">Energética <span class="price">8,90 €</span></div><p>Salmón curado, brotes, aguacate, cherries y huevo a la plancha. Salsa tártara.</p></div>
+              <div class="menu__item"><div class="menu__name">Power <span class="price">9,90 €</span></div><p>Roast beef, quinoa, rúcula, cherries y cebolla encurtida. Salsa de rábano picante.</p></div>
+            </div>
+            <div class="menu__col">
+              <div class="menu__item"><div class="menu__name">Frankfurt <span class="price">11,90 €</span></div><p>Huevos a la plancha, salchicha, alubias, salsa de tomate, champiñón, tomate asado y tostadas.</p></div>
+              <div class="menu__item"><div class="menu__name">Liverpool <span class="price">11,90 €</span></div><p>Huevos revueltos, bacon, alubias, tostada de tomate rallado, AOVE y verduras salteadas.</p></div>
+              <div class="menu__item"><div class="menu__name">San Francisco <span class="price">11,90 €</span></div><p>Huevos benedictinos sobre pan brioche, salmón curado, espinacas y verduras salteadas.</p></div>
+              <div class="menu__item"><div class="menu__name">Tulum <span class="price">11,90 €</span></div><p>Huevos rancheros picantes, pulled pork y alubias negras.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOSTAS -->
+        <div class="menu__panel" data-panel="tostas">
+          <div class="menu__intro">
+            <strong>Pan 100% integral · masa madre 24 h</strong>
+            <span>Obrador Molt — fermentación natural y harinas integrales.</span>
+          </div>
+          <div class="menu__cols">
+            <div class="menu__col">
+              <div class="menu__item"><div class="menu__name">Raphie <span class="price">6,90 €</span></div><p>Tofu especiado, espinacas salteadas, tomates secos y rúcula.</p></div>
+              <div class="menu__item"><div class="menu__name">Valen <span class="price">5,80 €</span></div><p>Hummus de garbanzo, aguacate y cherries salteados con tomillo, semillas y pimentón.</p></div>
+              <div class="menu__item"><div class="menu__name">Forza Italia <span class="price">9,50 €</span></div><p>Burrata italiana, brotes, cherries salteados y pesto casero de almendras.</p></div>
+              <div class="menu__item"><div class="menu__name">Boniato <span class="price">6,90 €</span></div><p>Boniato asado y crema de aguacate con Tabasco.</p></div>
+              <div class="menu__item"><div class="menu__name">Espinacas <span class="price">5,50 €</span></div><p>Espinacas salteadas, queso feta, huevos a la plancha y aceite de guindilla.</p></div>
+            </div>
+            <div class="menu__col">
+              <div class="menu__item"><div class="menu__name">Salmón curado & aguacate <span class="price">8,50 €</span></div><p>Salmón curado casero, manzana verde, aguacate y salsa tártara.</p></div>
+              <div class="menu__item"><div class="menu__name">Jamón serrano <span class="price">5,50 €</span></div><p>Jamón serrano, tomate rallado y AOVE Verde Esmeralda.</p></div>
+              <div class="menu__item"><div class="menu__name">Huevos revueltos <span class="price">5,90 €</span></div><p>Con aguacate, semillas y pipas de calabaza y girasol.</p></div>
+              <div class="menu__item"><div class="menu__name">Tomate & AOVE <span class="price">2,50 €</span></div><p>Tomate rallado y AOVE Verde Esmeralda.</p></div>
+              <div class="menu__item"><div class="menu__name">Pre entreno <span class="price">3,90 €</span></div><p>Mantequilla de cacahuetes, plátano y sirope.</p></div>
+            </div>
+          </div>
+          <p class="menu__note">Pan sin gluten · +1,00 €</p>
+        </div>
+
+        <!-- ENTRE PANES -->
+        <div class="menu__panel" data-panel="panes">
+          <div class="menu__cols">
+            <div class="menu__col">
+              <p class="menu__cat">Pan bagel</p>
+              <div class="menu__item"><div class="menu__name">New York <span class="price">10,50 €</span></div><p>Salmón curado, salsa tártara y aguacate.</p></div>
+              <div class="menu__item"><div class="menu__name">Pulled Pork <span class="price">10,50 €</span></div><p>Pulled pork a baja temperatura, huevo a la plancha, salsa BBQ, cebolla caramelizada y cheddar.</p></div>
+
+              <p class="menu__cat">Pan veggie</p>
+              <div class="menu__item"><div class="menu__name">Veggie <span class="price">7,50 €</span></div><p>Hummus de garbanzo casero, aguacate, cherries y pimentón ahumado.</p></div>
+              <div class="menu__item"><div class="menu__name">Huevos & bacon <span class="price">8,50 €</span></div><p>Huevos revueltos, bacon, queso Edam y tomate rallado.</p></div>
+            </div>
+            <div class="menu__col">
+              <p class="menu__cat">Pan brioche</p>
+              <div class="menu__item"><div class="menu__name">Serrano <span class="price">7,90 €</span></div><p>Jamón serrano, tomate rallado y rúcula.</p></div>
+              <div class="menu__item"><div class="menu__name">Sandwich Veggie <span class="price">8,50 €</span></div><p>Salsa tártara, queso edam, cherries salteados, canónigos, rúcula, cebolla encurtida y huevo a la plancha.</p></div>
+              <div class="menu__item"><div class="menu__name">Sandwich Roast Beef</div></div>
+              <div class="menu__item"><div class="menu__name">Sandwich Pollo</div></div>
+
+              <p class="menu__cat">Pan chapata · pan bao</p>
+              <div class="menu__item"><div class="menu__name">Sandwich Caprese</div></div>
+              <div class="menu__item"><div class="menu__name">Pan Bao</div></div>
+            </div>
+          </div>
+          <p class="menu__note">Pan sin gluten · +1,00 €</p>
+        </div>
+
+        <!-- HUEVOS Y BOWLS -->
+        <div class="menu__panel" data-panel="huevos">
+          <div class="menu__cols">
+            <div class="menu__col">
+              <p class="menu__cat">Huevos</p>
+              <div class="menu__item"><div class="menu__name">Super Proteico Keto <span class="price">11,90 €</span></div><p>Huevos revueltos, aguacate y salmón curado.</p></div>
+              <div class="menu__item"><div class="menu__name">Huevos a la española <span class="price">8,90 €</span></div><p>Jamón serrano con huevo a la plancha.</p></div>
+              <div class="menu__item"><div class="menu__name">Huevos turcos <span class="price">7,90 €</span></div><p>Huevo pochado, yogur griego, ajo, aceite de pimiento y cayena.</p></div>
+              <div class="menu__item"><div class="menu__name">Pochados con English Muffin <span class="price">8,90 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Tortilla francesa <span class="price">4,90 €</span></div></div>
+
+              <p class="menu__cat">Pancakes sin gluten</p>
+              <div class="menu__item"><div class="menu__name">Con huevos revueltos</div></div>
+              <div class="menu__item"><div class="menu__name">Con frutas y dulces</div></div>
+              <div class="menu__item"><div class="menu__name">Plátano & Nut</div></div>
+              <div class="menu__item"><div class="menu__name">Nutella · DDL · pistacho · chocolate</div></div>
+            </div>
+            <div class="menu__col">
+              <p class="menu__cat">Bowls saludables</p>
+              <div class="menu__item"><div class="menu__name">Chia pudding <span class="price">7,90 €</span></div><p>Con frutos rojos, leche de coco y lascas de coco.</p></div>
+              <div class="menu__item"><div class="menu__name">Porridge <span class="price">7,90 €</span></div><p>Avena integral sin gluten, mantequilla de cacahuetes, leche de avena, fruta, chocolate y sirope de agave.</p></div>
+
+              <p class="menu__cat">Bowls</p>
+              <div class="menu__item"><div class="menu__name">Açaí o Pitaya <span class="price">7,90 € / 11,50 €</span></div><p>Banana, frutos rojos, paçoca, granola casera, chips de chocolate y mantequilla de cacahuetes.</p></div>
+              <div class="menu__item"><div class="menu__name">Yogur griego o vegano <span class="price">4,50 € / 6,90 €</span></div><p>Con coco, frutas de estación, granola casera y sirope de agave.</p></div>
+              <div class="menu__item"><div class="menu__name">Frutas frescas <span class="price">3,90 € / 5,90 €</span></div><p>Macedonia de fruta fresca de temporada.</p></div>
+
+              <p class="menu__cat">Tostas francesas (brioche)</p>
+              <div class="menu__item"><div class="menu__name">Proteica</div></div>
+              <div class="menu__item"><div class="menu__name">Con fruta</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CAFÉ -->
+        <div class="menu__panel" data-panel="cafe">
+          <div class="menu__intro">
+            <strong>Specialty coffee</strong>
+            <span>Haz tu bebida fría · +0,50 € · Leches vegetales +0,30 €</span>
+          </div>
+          <div class="menu__cols">
+            <div class="menu__col">
+              <p class="menu__cat">Espressos clásicos</p>
+              <div class="menu__item"><div class="menu__name">Espresso <span class="price">1,50 / 2,40 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Café cortado <span class="price">1,80 / 2,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Latte Macchiato <span class="price">2,60 / 3,40 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Americano <span class="price">1,90 / 2,60 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Flat White <span class="price">2,80 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Café con leche <span class="price">2,10 / 2,70 / 3,60 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Capuccino <span class="price">2,70 / 3,60 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Vainilla / Caramel Latte <span class="price">3,20 / 3,90 €</span></div></div>
+
+              <p class="menu__cat">Filtros</p>
+              <div class="menu__item"><div class="menu__name">Batch Brew <span class="price">2,60 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">V60 <span class="price">3,90 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Chemex <span class="price">3,90 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Prensa francesa <span class="price">3,90 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Aeropress <span class="price">3,90 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Cold Brew <span class="price">3,50 / 4,50 €</span></div></div>
+            </div>
+            <div class="menu__col">
+              <p class="menu__cat">Espressos especiales</p>
+              <div class="menu__item"><div class="menu__name">Espresso Orange / Tonic <span class="price">3,50 / 4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Espresso Limonada <span class="price">3,50 / 4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Bullet Proof <span class="price">4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Shakerato <span class="price">4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Moccaccino <span class="price">3,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Dirty Chai <span class="price">4,20 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Affogato <span class="price">3,60 / 4,60 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Frapuccino <span class="price">4,50 €</span></div></div>
+
+              <p class="menu__cat">Sin café</p>
+              <div class="menu__item"><div class="menu__name">Matcha Latte <span class="price">3,50 / 4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Chai Latte <span class="price">3,50 / 4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Cúrcuma Latte <span class="price">3,50 / 4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Pink Latte (remolacha) <span class="price">3,50 / 4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Açaí Latte <span class="price">3,50 / 4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Spirulina <span class="price">4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Chocolate 45% / 70% <span class="price">2,80 / 3,50 / 3,80 €</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BEBIDAS FRÍAS -->
+        <div class="menu__panel" data-panel="frias">
+          <div class="menu__intro">
+            <strong>Temporada de bebidas frías</strong>
+            <span>Cualquier café o latte se puede pedir frío · +0,50 €</span>
+          </div>
+          <div class="menu__cols">
+            <div class="menu__col">
+              <p class="menu__cat">Cafés fríos</p>
+              <div class="menu__item"><div class="menu__name">Cold Brew <span class="price">3,50 / 4,50 €</span></div><p>Café extraído en frío durante 12 h. Suave y dulce.</p></div>
+              <div class="menu__item"><div class="menu__name">Espresso Tonic <span class="price">3,50 / 4,50 €</span></div><p>Espresso sobre tónica y hielo.</p></div>
+              <div class="menu__item"><div class="menu__name">Espresso Orange <span class="price">3,50 / 4,50 €</span></div><p>Espresso con zumo de naranja natural.</p></div>
+              <div class="menu__item"><div class="menu__name">Espresso Limonada <span class="price">3,50 / 4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Shakerato <span class="price">4,50 €</span></div><p>Espresso agitado en frío.</p></div>
+              <div class="menu__item"><div class="menu__name">Frapuccino <span class="price">4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Affogato <span class="price">3,60 / 4,60 €</span></div><p>Espresso caliente sobre helado.</p></div>
+            </div>
+            <div class="menu__col">
+              <p class="menu__cat">Lattes & smoothies fríos</p>
+              <div class="menu__item"><div class="menu__name">Matcha Orange <span class="price">3,50 / 4,50 €</span></div><p>Matcha ceremonial con naranja natural.</p></div>
+              <div class="menu__item"><div class="menu__name">Remolacha Latte <span class="price">3,50 / 4,50 €</span></div><p>Pink latte natural de remolacha.</p></div>
+              <div class="menu__item"><div class="menu__name">Iced Açaí Latte <span class="price">3,50 / 4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Blue Protein</div><p>Smoothie azul cargado de proteína.</p></div>
+              <div class="menu__item"><div class="menu__name">Green Power</div><p>Espinacas, manzana, jengibre y lima.</p></div>
+              <div class="menu__item"><div class="menu__name">Berries Paradise</div><p>Frutos rojos, plátano y leche vegetal.</p></div>
+
+              <p class="menu__cat">Otros refrescos</p>
+              <div class="menu__item"><div class="menu__name">Limonada, menta y jengibre <span class="price">3,50 / 3,90 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Kombucha jengibre / berries <span class="price">4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Zumo de naranja natural <span class="price">3,20 / 3,70 €</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BEBIDAS -->
+        <div class="menu__panel" data-panel="bebidas">
+          <div class="menu__cols">
+            <div class="menu__col">
+              <p class="menu__cat">Refrescos, zumos & smoothies</p>
+              <div class="menu__item"><div class="menu__name">Zumo de naranja natural <span class="price">3,20 / 3,70 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Limonada, menta y jengibre <span class="price">3,50 / 3,90 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Zumo botella (melocotón, piña) <span class="price">2,80 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Refresco cola / naranja / limón <span class="price">3,60 €</span></div></div>
+
+              <p class="menu__cat">Smoothies</p>
+              <div class="menu__item"><div class="menu__name">Berries Paradise · Blue Protein · Green Power</div></div>
+              <div class="menu__item"><div class="menu__name">Matcha Orange · Remolacha Latte</div></div>
+
+              <p class="menu__cat">Infusiones & té <span class="price-small">2,80 €</span></p>
+              <div class="menu__item"><div class="menu__name">Mate cocido · English breakfast · Té rojo</div></div>
+              <div class="menu__item"><div class="menu__name">Té verde (Sencha, Vainilla) · Rooibos · Chai massala</div></div>
+              <div class="menu__item"><div class="menu__name">Manzana y canela · Frutos rojos · Manzanilla · Menta</div></div>
+            </div>
+            <div class="menu__col">
+              <p class="menu__cat">Cervezas & vinos</p>
+              <div class="menu__item"><div class="menu__name">Cerveza 1/5 <span class="price">2,00 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Cerveza 1/3 especial <span class="price">3,20 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Caña <span class="price">2,00 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Vino Chardonnay <span class="price">4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Vino Malbec <span class="price">4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Vermut rojo / blanco <span class="price">3,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Cava Codorníu <span class="price">4,90 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Mimosa <span class="price">7,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Aperol Spritz <span class="price">8,90 €</span></div></div>
+
+              <p class="menu__cat">Otras bebidas</p>
+              <div class="menu__item"><div class="menu__name">Agua sin gas <span class="price">1,90 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Agua con gas <span class="price">2,30 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Kombucha jengibre / berries <span class="price">4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Tónica <span class="price">3,30 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Bitter <span class="price">2,80 €</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DULCES -->
+        <div class="menu__panel" data-panel="dulces">
+          <div class="menu__cols">
+            <div class="menu__col">
+              <p class="menu__cat">Tartas</p>
+              <div class="menu__item"><div class="menu__name">Tarta húmeda de chocolate <span class="price">5,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Tarta de queso con frutos rojos <span class="price">5,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Carrot cake <span class="price">4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Tartaleta limón y merengue italiano <span class="price">4,90 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Sablé de manzana <span class="price">4,90 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Brownie <span class="price">4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Fondant de chocolate vegano <span class="price">5,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Bizcocho de arándanos y yogur <span class="price">3,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Banana bread <span class="price">3,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Éclair chocolate / café / DDL <span class="price">4,50 €</span></div></div>
+
+              <p class="menu__cat">Cookies</p>
+              <div class="menu__item"><div class="menu__name">Chispas de chocolate <span class="price">3,40 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Trigo sarraceno y chocolate 70% <span class="price">3,80 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Red velvet y chocolate blanco <span class="price">3,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Avena, chocolate y mantequilla de cacahuetes <span class="price">3,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Pistacho <span class="price">3,80 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Oreo <span class="price">3,80 €</span></div></div>
+            </div>
+            <div class="menu__col">
+              <p class="menu__cat">Alfajores caseros</p>
+              <div class="menu__item"><div class="menu__name">De maicena</div></div>
+              <div class="menu__item"><div class="menu__name">Mini alfajor de maicena</div></div>
+              <div class="menu__item"><div class="menu__name">Almendras <span class="price">3,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Chocolate blanco <span class="price">3,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Chocolate negro <span class="price">3,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Pistacho y DDL <span class="price">3,50 €</span></div></div>
+
+              <p class="menu__cat">Bollería</p>
+              <div class="menu__item"><div class="menu__name">Rollo de canela casero <span class="price">4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Rollo de canela con masa madre <span class="price">3,90 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Hojaldre de manzana y canela <span class="price">5,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Rollo de cardamomo con masa madre <span class="price">3,90 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Pastafrola <span class="price">4,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Medialunas argentinas <span class="price">1,90 / 2,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Croissant mantequilla <span class="price">2,00 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Donut original glacé <span class="price">2,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Donut chocolate <span class="price">3,50 €</span></div></div>
+              <div class="menu__item"><div class="menu__name">Coquito <span class="price">3,50 €</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="menu__legal">Los precios pueden variar. La carta oficial se actualiza en local. Consumo mínimo por hora: 10 €.</p>
+
+      <details class="carta__official">
+        <summary>Ver carta oficial (imágenes)</summary>
+        <div class="carta__grid">
+          <a class="carta__sheet" href="images/carta-1.png" target="_blank" rel="noopener">
+            <img src="images/carta-1.png" alt="Carta AURA — bebidas y dulces" loading="lazy" />
+            <span class="carta__hint">Ampliar</span>
+          </a>
+          <a class="carta__sheet" href="images/carta-2.png" target="_blank" rel="noopener">
+            <img src="images/carta-2.png" alt="Carta AURA — comida" loading="lazy" />
+            <span class="carta__hint">Ampliar</span>
+          </a>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" class="section visit">
+    <div class="container visit__grid">
+      <div class="visit__info">
+        <p class="eyebrow">Visítanos</p>
+        <h2>En el corazón de Ruzafa</h2>
+        <p>Ven a tomar un café, a desayunar sin prisa o a alargar la mañana con un brunch.</p>
+
+        <ul class="visit__list">
+          <li>
+            <span class="visit__label">Dirección</span>
+            <span>Barrio de Ruzafa, Valencia</span>
+          </li>
+          <li>
+            <span class="visit__label">Teléfono</span>
+            <a href="tel:+34612422574">612 422 574</a>
+          </li>
+          <li>
+            <span class="visit__label">Horario</span>
+            <span>Todos los días · 9:00 – 17:00</span>
+          </li>
+          <li>
+            <span class="visit__label">Instagram</span>
+            <a href="https://www.instagram.com/aurakaffeina__/" target="_blank" rel="noopener">@aurakaffeina__</a>
+          </li>
+        </ul>
+
+        <a class="btn btn--primary" href="https://www.google.com/maps/place/AURA+Kaffeina+Brunch+%26+Specialty+Coffee+-+Ruzafa/@39.4640145,-0.366011,17z/" target="_blank" rel="noopener">Abrir en Google Maps</a>
+      </div>
+
+      <div class="visit__map">
+        <iframe
+          title="Mapa de AURA Kaffeina en Ruzafa"
+          src="https://www.google.com/maps?q=AURA+Kaffeina+Brunch+%26+Specialty+Coffee+Ruzafa&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="footer__logo">AU.RA</div>
+        <p class="footer__sub">Kaffeina · Brunch & Specialty Coffee</p>
+      </div>
+      <div>
+        <p class="footer__title">Contacto</p>
+        <a href="tel:+34612422574">612 422 574</a>
+        <a href="https://www.instagram.com/aurakaffeina__/" target="_blank" rel="noopener">@aurakaffeina__</a>
+      </div>
+      <div>
+        <p class="footer__title">Horario</p>
+        <p>Todos los días · 9:00 – 17:00</p>
+        <p>Cocina & brunch hasta las 16:00</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> AURA Kaffeina · Ruzafa, Valencia</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
