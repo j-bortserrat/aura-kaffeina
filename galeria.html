@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AURA · Brunch & Specialty Coffee · Ruzafa, Valencia</title>
-  <meta name="description" content="AURA — Brunch y café de especialidad en el corazón de Ruzafa, Valencia. Abierto todos los días de 9:00 a 16:00." />
+  <title>Galería · AURA Brunch & Specialty Coffee · Ruzafa, Valencia</title>
+  <meta name="description" content="Fotos de los platos, el café y el local de AURA, en el barrio de Ruzafa, Valencia." />
   <!-- rel="canonical" pendiente: añadir cuando se confirme el dominio definitivo -->
-  <link rel="alternate" hreflang="es" href="index.html" />
-  <link rel="alternate" hreflang="en" href="en.html" />
-  <link rel="alternate" hreflang="x-default" href="index.html" />
-  <meta property="og:title" content="AURA · Brunch & Specialty Coffee · Ruzafa, Valencia" />
-  <meta property="og:description" content="AURA — Brunch y café de especialidad en el corazón de Ruzafa, Valencia. Abierto todos los días de 9:00 a 16:00." />
+  <link rel="alternate" hreflang="es" href="galeria.html" />
+  <link rel="alternate" hreflang="en" href="en-galeria.html" />
+  <link rel="alternate" hreflang="x-default" href="galeria.html" />
+  <meta property="og:title" content="Galería · AURA Brunch & Specialty Coffee · Ruzafa, Valencia" />
+  <meta property="og:description" content="Fotos de los platos, el café y el local de AURA, en el barrio de Ruzafa, Valencia." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:image" content="/assets/hero-poster.jpg" />
   <!-- og:url pendiente: añadir la URL absoluta cuando se confirme el dominio -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AURA · Brunch & Specialty Coffee · Ruzafa, Valencia" />
-  <meta name="twitter:description" content="AURA — Brunch y café de especialidad en el corazón de Ruzafa, Valencia. Abierto todos los días de 9:00 a 16:00." />
+  <meta name="twitter:title" content="Galería · AURA Brunch & Specialty Coffee · Ruzafa, Valencia" />
+  <meta name="twitter:description" content="Fotos de los platos, el café y el local de AURA, en el barrio de Ruzafa, Valencia." />
   <meta name="twitter:image" content="/assets/hero-poster.jpg" />
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -71,16 +71,16 @@
       </svg>
     </a>
     <nav class="nav__links" id="navLinks" aria-label="Principal">
-      <a href="index.html" class="is-active">Inicio</a>
+      <a href="index.html">Inicio</a>
       <a href="carta.html">Carta</a>
-      <a href="galeria.html">Galería</a>
+      <a href="galeria.html" class="is-active">Galería</a>
       <a href="talleres.html">Talleres</a>
       <a href="visitanos.html">Cómo llegar</a>
     </nav>
     <div class="nav__right">
       <a href="reservas.html" class="nav__cta">Reservar</a>
       <div class="nav__lang">
-        <span class="is-current">ES</span><span class="nav__lang-sep">/</span><a href="en.html" id="langSwitch" aria-label="Switch to English">EN</a>
+        <span class="is-current">ES</span><span class="nav__lang-sep">/</span><a href="en-galeria.html" id="langSwitch" aria-label="Switch to English">EN</a>
       </div>
       <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -90,60 +90,34 @@
 
   <main>
 
-    <!-- HERO -->
-    <section id="top" class="hero">
-      <video class="hero__video" autoplay muted loop playsinline poster="assets/hero-poster.jpg" aria-hidden="true">
-        <source src="assets/hero.mp4" type="video/mp4">
-      </video>
-      <div class="hero__inner">
-        <p class="eyebrow">Ruzafa · Valencia</p>
-        <h1 class="hero__logo">
-          <span class="hero__logo-script">AU.RA</span>
-          <span class="hero__logo-sub">Brunch & Specialty Coffee</span>
-        </h1>
-        <p class="hero__tag">Café de especialidad, brunch sin prisa y un rincón con luz propia en el barrio.</p>
-        <div class="hero__actions">
-          <a href="carta.html" class="btn btn--primary">Ver carta</a>
-          <a href="https://www.instagram.com/aura_vlc/" target="_blank" rel="noopener" class="btn btn--ghost">Síguenos en Instagram</a>
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Galería</p>
+          <h2>El día a día de AURA</h2>
+          <p class="lede">Un vistazo al día a día en AURA.</p>
+        </header>
+        <div class="gallery__grid">
+          <figure class="gallery__item gallery__item--tall" data-caption="Brunch veggie en la terraza"><img src="images/foto-1.png" alt="Brunch veggie en la terraza" loading="lazy" /></figure>
+          <figure class="gallery__item" data-caption="Bowl con huevo, aguacate y salmón"><img src="images/foto-2.png" alt="Bowl con huevo, aguacate y salmón" loading="lazy" /></figure>
+          <figure class="gallery__item" data-caption="Pancakes con fruta & cappuccino"><img src="images/foto-3.png" alt="Pancakes con fruta y cappuccino" loading="lazy" /></figure>
+          <figure class="gallery__item gallery__item--wide" data-caption="Tosta de aguacate & matcha latte"><img src="images/foto-4.png" alt="Tosta de aguacate y matcha latte" loading="lazy" /></figure>
+          <figure class="gallery__item" data-caption="Matcha latte ceremonial"><img src="images/foto-5.png" alt="Matcha latte ceremonial" loading="lazy" /></figure>
+          <figure class="gallery__item" data-caption="Sándwich de huevo & kombucha MŪN"><img src="images/foto-6.png" alt="Sándwich de huevo y kombucha MŪN" loading="lazy" /></figure>
+          <figure class="gallery__item gallery__item--tall" data-caption="Tosta francesa con salmón y aguacate"><img src="images/foto-7.png" alt="Tosta francesa con salmón y aguacate" loading="lazy" /></figure>
+          <figure class="gallery__item" data-caption="Açaí bowl & berries smoothie"><img src="images/foto-8.png" alt="Açaí bowl y berries smoothie" loading="lazy" /></figure>
+          <figure class="gallery__item" data-caption="Tostas francesas con burrata"><img src="images/foto-9.png" alt="Tostas francesas con burrata" loading="lazy" /></figure>
+          <figure class="gallery__item gallery__item--wide" data-caption="Matcha latte ceremonial"><img src="images/foto-10.png" alt="Matcha latte ceremonial" loading="lazy" /></figure>
+          <figure class="gallery__item" data-caption="Tarta de chocolate con cappuccino"><img src="images/foto-11.png" alt="Tarta de chocolate con cappuccino" loading="lazy" /></figure>
+          <figure class="gallery__item" data-caption="Tarta de limón merengada"><img src="images/foto-12.png" alt="Tarta de limón merengada" loading="lazy" /></figure>
+          <figure class="gallery__item" data-caption="Brunch completo con tomates y huevos"><img src="images/foto-13.png" alt="Brunch completo con tomates y huevos" loading="lazy" /></figure>
         </div>
-      </div>
-      <a href="#about" class="hero__scroll" id="heroScroll" aria-label="Bajar a contenido">
-        <span></span>
-      </a>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section about">
-      <div class="container about__grid">
-        <div class="about__text">
-          <p class="eyebrow">El lugar</p>
-          <h2>Un brunch despacio,<br/>un café que se nota.</h2>
-          <p>
-            AURA nace en Ruzafa como un espacio para parar.
-            Tostamos la conversación a fuego lento y servimos café de
-            especialidad acompañado de un brunch pensado para empezar
-            —o alargar— el día.
-          </p>
-          <p>
-            Producto de proximidad, masa madre, fruta de temporada y
-            un equipo que mima cada plato como si fuera el primero.
-          </p>
-          <ul class="about__chips">
-            <li>Specialty Coffee</li>
-            <li>Brunch</li>
-            <li>Opciones veggie</li>
-            <li>Açaí</li>
-            <li>Pet friendly</li>
-          </ul>
-        </div>
-        <div class="about__visual">
-          <img class="about__photo about__photo--1" src="images/about-2.png" alt="Sándwich tostado con aguacate y bacon" />
-          <img class="about__photo about__photo--2" src="images/about-1.png" alt="Iced Açaí Latte" />
-          <img class="about__photo about__photo--3" src="images/about-3.png" alt="Mesa con varios platos del brunch" />
-        </div>
+        <p class="gallery__cta">
+          Síguenos en
+          <a href="https://www.instagram.com/aura_vlc/" target="_blank" rel="noopener">@aura_vlc</a>
+        </p>
       </div>
     </section>
-
   
 
   </main>

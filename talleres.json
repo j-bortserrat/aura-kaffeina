@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "cata-origenes",
+    "imagen": "images/taller-cata-origenes.jpg",
+    "titulo": "Cata de cafés de origen",
+    "titulo_en": "Origin coffee cupping",
+    "subtitulo": "Sábado · 10:00 · 8 plazas",
+    "subtitulo_en": "Saturday · 10:00 · 8 spots",
+    "texto": "Recorremos tres orígenes distintos en taza, hablamos de proceso y perfil de tueste. Incluye café para llevar.",
+    "texto_en": "We taste three different origins side by side and talk process and roast profile. Coffee to take away included.",
+    "publicar": "si"
+  },
+  {
+    "slug": "latte-art",
+    "imagen": "images/taller-latte-art.jpg",
+    "titulo": "Latte art para principiantes",
+    "titulo_en": "Latte art for beginners",
+    "subtitulo": "Domingo · 11:30 · 6 plazas",
+    "subtitulo_en": "Sunday · 11:30 · 6 spots",
+    "texto": "Corazón, hoja y rosetta con leche vaporizada — de cero a tu primera taza con dibujo.",
+    "texto_en": "Heart, leaf and rosetta with steamed milk — from zero to your first latte art.",
+    "publicar": "si"
+  }
+]

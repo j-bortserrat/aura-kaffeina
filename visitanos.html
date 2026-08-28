@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AURA · Brunch & Specialty Coffee · Ruzafa, Valencia</title>
-  <meta name="description" content="AURA — Brunch y café de especialidad en el corazón de Ruzafa, Valencia. Abierto todos los días de 9:00 a 16:00." />
+  <title>Cómo llegar · AURA Brunch & Specialty Coffee · Ruzafa, Valencia</title>
+  <meta name="description" content="Dirección, teléfono, horario y mapa de AURA, en el barrio de Ruzafa, Valencia." />
   <!-- rel="canonical" pendiente: añadir cuando se confirme el dominio definitivo -->
-  <link rel="alternate" hreflang="es" href="index.html" />
-  <link rel="alternate" hreflang="en" href="en.html" />
-  <link rel="alternate" hreflang="x-default" href="index.html" />
-  <meta property="og:title" content="AURA · Brunch & Specialty Coffee · Ruzafa, Valencia" />
-  <meta property="og:description" content="AURA — Brunch y café de especialidad en el corazón de Ruzafa, Valencia. Abierto todos los días de 9:00 a 16:00." />
+  <link rel="alternate" hreflang="es" href="visitanos.html" />
+  <link rel="alternate" hreflang="en" href="en-visitanos.html" />
+  <link rel="alternate" hreflang="x-default" href="visitanos.html" />
+  <meta property="og:title" content="Cómo llegar · AURA Brunch & Specialty Coffee · Ruzafa, Valencia" />
+  <meta property="og:description" content="Dirección, teléfono, horario y mapa de AURA, en el barrio de Ruzafa, Valencia." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:image" content="/assets/hero-poster.jpg" />
   <!-- og:url pendiente: añadir la URL absoluta cuando se confirme el dominio -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AURA · Brunch & Specialty Coffee · Ruzafa, Valencia" />
-  <meta name="twitter:description" content="AURA — Brunch y café de especialidad en el corazón de Ruzafa, Valencia. Abierto todos los días de 9:00 a 16:00." />
+  <meta name="twitter:title" content="Cómo llegar · AURA Brunch & Specialty Coffee · Ruzafa, Valencia" />
+  <meta name="twitter:description" content="Dirección, teléfono, horario y mapa de AURA, en el barrio de Ruzafa, Valencia." />
   <meta name="twitter:image" content="/assets/hero-poster.jpg" />
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -71,16 +71,16 @@
       </svg>
     </a>
     <nav class="nav__links" id="navLinks" aria-label="Principal">
-      <a href="index.html" class="is-active">Inicio</a>
+      <a href="index.html">Inicio</a>
       <a href="carta.html">Carta</a>
       <a href="galeria.html">Galería</a>
       <a href="talleres.html">Talleres</a>
-      <a href="visitanos.html">Cómo llegar</a>
+      <a href="visitanos.html" class="is-active">Cómo llegar</a>
     </nav>
     <div class="nav__right">
       <a href="reservas.html" class="nav__cta">Reservar</a>
       <div class="nav__lang">
-        <span class="is-current">ES</span><span class="nav__lang-sep">/</span><a href="en.html" id="langSwitch" aria-label="Switch to English">EN</a>
+        <span class="is-current">ES</span><span class="nav__lang-sep">/</span><a href="en-visitanos.html" id="langSwitch" aria-label="Switch to English">EN</a>
       </div>
       <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -90,56 +90,53 @@
 
   <main>
 
-    <!-- HERO -->
-    <section id="top" class="hero">
-      <video class="hero__video" autoplay muted loop playsinline poster="assets/hero-poster.jpg" aria-hidden="true">
-        <source src="assets/hero.mp4" type="video/mp4">
-      </video>
-      <div class="hero__inner">
-        <p class="eyebrow">Ruzafa · Valencia</p>
-        <h1 class="hero__logo">
-          <span class="hero__logo-script">AU.RA</span>
-          <span class="hero__logo-sub">Brunch & Specialty Coffee</span>
-        </h1>
-        <p class="hero__tag">Café de especialidad, brunch sin prisa y un rincón con luz propia en el barrio.</p>
-        <div class="hero__actions">
-          <a href="carta.html" class="btn btn--primary">Ver carta</a>
-          <a href="https://www.instagram.com/aura_vlc/" target="_blank" rel="noopener" class="btn btn--ghost">Síguenos en Instagram</a>
-        </div>
-      </div>
-      <a href="#about" class="hero__scroll" id="heroScroll" aria-label="Bajar a contenido">
-        <span></span>
-      </a>
-    </section>
+    <!-- VISIT -->
+    <section id="visit" class="section visit">
+      <div class="container visit__grid">
+        <div class="visit__info">
+          <p class="eyebrow">Visítanos</p>
+          <h2>En el corazón de Ruzafa</h2>
+          <p>Ven a tomar un café, a desayunar sin prisa o a alargar la mañana con un brunch.</p>
 
-    <!-- ABOUT -->
-    <section id="about" class="section about">
-      <div class="container about__grid">
-        <div class="about__text">
-          <p class="eyebrow">El lugar</p>
-          <h2>Un brunch despacio,<br/>un café que se nota.</h2>
-          <p>
-            AURA nace en Ruzafa como un espacio para parar.
-            Tostamos la conversación a fuego lento y servimos café de
-            especialidad acompañado de un brunch pensado para empezar
-            —o alargar— el día.
-          </p>
-          <p>
-            Producto de proximidad, masa madre, fruta de temporada y
-            un equipo que mima cada plato como si fuera el primero.
-          </p>
-          <ul class="about__chips">
-            <li>Specialty Coffee</li>
-            <li>Brunch</li>
-            <li>Opciones veggie</li>
-            <li>Açaí</li>
-            <li>Pet friendly</li>
+          <ul class="visit__list">
+            <li>
+              <span class="visit__label">Dirección</span>
+              <span>Barrio de Ruzafa, Valencia</span>
+            </li>
+            <li>
+              <span class="visit__label">Teléfono</span>
+              <a href="tel:+34612422574">612 422 574</a>
+            </li>
+            <li>
+              <span class="visit__label">Horario</span>
+              <span>Todos los días · 9:00 – 16:00</span>
+            </li>
+            <li>
+              <span class="visit__label">Instagram</span>
+              <a href="https://www.instagram.com/aura_vlc/" target="_blank" rel="noopener">@aura_vlc</a>
+            </li>
           </ul>
+
+          <div class="hero__actions" style="justify-content:flex-start; margin-top:8px">
+            <a class="btn btn--primary" href="reservas.html">Reservar mesa</a>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/place/AURA+%7C+Brunch+%26+Lunch/@39.4640145,-0.366011,17z/data=!4m6!3m5!1s0xd60498bfa5386c3:0x5ffeeeb75361dbc0!8m2!3d39.4640145!4d-0.366011!16s%2Fg%2F11jb7hq08d?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Abrir en Google Maps</a>
+          </div>
         </div>
-        <div class="about__visual">
-          <img class="about__photo about__photo--1" src="images/about-2.png" alt="Sándwich tostado con aguacate y bacon" />
-          <img class="about__photo about__photo--2" src="images/about-1.png" alt="Iced Açaí Latte" />
-          <img class="about__photo about__photo--3" src="images/about-3.png" alt="Mesa con varios platos del brunch" />
+
+        <div class="visit__map">
+          <div class="map-wrap" id="mapWrap">
+            <iframe
+              id="mapFrame"
+              title="Mapa de AURA en Ruzafa"
+              data-src="https://www.google.com/maps?q=AURA+Brunch+%26+Lunch+Ruzafa&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+            <div class="map-consent" id="mapConsent">
+              <p>Para mostrar el mapa de Google necesitamos tu consentimiento de cookies de terceros.</p>
+              <button class="btn btn--primary" id="mapAccept" type="button">Aceptar y ver el mapa</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

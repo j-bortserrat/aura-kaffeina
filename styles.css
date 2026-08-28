@@ -343,26 +343,16 @@ h3 { font-size: 1.4rem; }
   transition: transform .35s var(--ease);
   cursor: pointer;
 }
-.gallery__item::before {
-  content: attr(data-placeholder);
+.gallery__item img {
   position: absolute; inset: 0;
-  display: grid; place-items: center;
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.4rem;
-  color: rgba(245,237,228,.35);
-  z-index: 1;
-}
-.gallery__item::after {
-  content: '';
-  position: absolute; inset: 0;
-  background:
-    radial-gradient(circle at 30% 30%, rgba(212,166,189,.2), transparent 60%),
-    radial-gradient(circle at 70% 70%, rgba(107,68,35,.4), transparent 50%);
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  display: block;
 }
 .gallery__item:hover { transform: scale(.98); }
-.gallery__item.has-image::before { display: none; }
-.gallery__item.has-image::after {
+.gallery__item::after {
   content: attr(data-caption);
+  position: absolute; inset: 0;
   display: flex;
   align-items: flex-end;
   padding: 18px;
@@ -374,7 +364,7 @@ h3 { font-size: 1.4rem; }
   opacity: 0;
   transition: opacity .3s var(--ease);
 }
-.gallery__item.has-image:hover::after { opacity: 1; }
+.gallery__item:hover::after { opacity: 1; }
 .gallery__item--tall  { grid-row: span 2; }
 .gallery__item--wide  { grid-column: span 2; }
 
@@ -612,22 +602,51 @@ h3 { font-size: 1.4rem; }
 /* =========================================
    RESERVAS
    ========================================= */
-.reservas__wrap {
-  position: relative;
+.reservas__form {
   max-width: 480px;
   margin: 0 auto;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  border: 1px solid rgba(212,166,189,.15);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
   background: var(--bg-deep);
+  border: 1px solid rgba(212,166,189,.15);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow);
 }
-.reservas__wrap iframe {
-  width: 100%;
-  height: 680px;
-  border: 0;
-  display: block;
+.reservas__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.reservas__form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--pink);
+  font-weight: 500;
 }
+.reservas__form .reservas__full { width: 100%; }
+.reservas__form input {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: var(--cream);
+  background: rgba(245,237,228,.06);
+  border: 1px solid rgba(245,237,228,.18);
+  border-radius: 10px;
+  padding: 12px 14px;
+  text-transform: none;
+  letter-spacing: normal;
+  color-scheme: dark;
+  transition: border-color .2s var(--ease), background .2s var(--ease);
+}
+.reservas__form input::placeholder { color: rgba(245,237,228,.4); }
+.reservas__form input:focus { outline: none; border-color: var(--pink); background: rgba(245,237,228,.1); }
+.reservas__submit {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  border: none; cursor: pointer; margin-top: 4px; width: 100%;
+  background: #25D366; color: #fff !important;
+}
+.reservas__submit:hover { background: #22c15e; }
 .reservas__alt {
   margin: 20px 0 0;
   text-align: center;
@@ -636,8 +655,105 @@ h3 { font-size: 1.4rem; }
 }
 .reservas__alt a { color: var(--pink); font-weight: 500; }
 @media (max-width: 560px) {
-  .reservas__wrap { max-width: 100%; }
-  .reservas__wrap iframe { height: 760px; }
+  .reservas__form { padding: 24px 20px; }
+  .reservas__row { grid-template-columns: 1fr; }
+}
+
+/* =========================================
+   TALLERES
+   ========================================= */
+.talleres { background: var(--bg-soft); }
+.talleres__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+.talleres__empty { grid-column: 1 / -1; text-align: center; color: var(--cream-2); opacity: .7; }
+.taller__card {
+  background: var(--bg);
+  border: 1px solid rgba(212,166,189,.15);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform .3s var(--ease);
+}
+.taller__card:hover { transform: translateY(-4px); }
+.taller__img {
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(135deg, var(--coffee) 0%, var(--bg-deep) 100%);
+  position: relative;
+  overflow: hidden;
+}
+.taller__img img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  display: block;
+}
+.taller__img::before {
+  content: attr(data-placeholder);
+  position: absolute; inset: 0;
+  display: grid; place-items: center;
+  padding: 20px; text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  color: rgba(245,237,228,.35);
+}
+.taller__img.has-image::before { display: none; }
+.taller__body { padding: 24px; }
+.taller__body h3 { margin-bottom: 6px; }
+.taller__sub {
+  font-size: 11px; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--pink); margin: 0 0 14px; font-weight: 500;
+}
+.taller__tag { color: var(--muted); letter-spacing: .1em; }
+.taller__card--pasado { opacity: .68; }
+.taller__card--pasado .taller__img { filter: grayscale(.4); }
+.taller__text { color: var(--cream-2); opacity: .85; margin: 0; }
+.taller__signup { margin-top: 20px; display: flex; justify-content: flex-end; }
+.taller__open[hidden] { display: none; }
+.taller__apuntarse {
+  display: flex; align-items: center; gap: 10px; width: 100%;
+}
+.taller__apuntarse[hidden] { display: none; }
+.taller__stepper {
+  display: flex; align-items: center; gap: 4px;
+  flex: none; padding: 4px;
+  background: var(--pink);
+  border-radius: 20px;
+  color: var(--bg-deep);
+}
+.taller__step {
+  width: 26px; height: 26px; flex: none;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(42,20,20,.15); border: none; cursor: pointer; border-radius: 50%;
+  color: var(--bg-deep); font-size: 1rem; line-height: 1; font-family: 'Inter', sans-serif;
+  transition: background .2s var(--ease);
+}
+.taller__step:hover { background: rgba(42,20,20,.32); }
+.taller__stepper input {
+  min-width: 22px; width: 22px; text-align: center;
+  background: none; border: none;
+  color: var(--bg-deep); font-size: .9rem; font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  -moz-appearance: textfield;
+}
+.taller__stepper input::-webkit-inner-spin-button,
+.taller__stepper input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+.taller__stepper input:focus { outline: none; }
+.taller__cta {
+  flex: 1; height: 44px;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  background: #25D366; color: #fff !important;
+  border: none;
+  cursor: pointer;
+  transition: transform .2s var(--ease), background .2s var(--ease);
+}
+.taller__cta:hover { transform: translateY(-2px); background: #22c15e; }
+.taller__cta svg { flex: none; }
+@media (max-width: 340px) {
+  .taller__apuntarse { flex-wrap: wrap; }
+  .taller__cta { flex-basis: 100%; }
+}
+@media (max-width: 720px) {
+  .talleres__grid { grid-template-columns: 1fr; }
 }
 
 /* =========================================
@@ -740,11 +856,8 @@ h3 { font-size: 1.4rem; }
 }
 
 /* =========================================
-   VISTAS (varias "páginas" en un solo archivo)
+   NAV: enlace activo
    ========================================= */
-.view { display: none; }
-.view.is-active { display: block; animation: viewIn .5s var(--ease); }
-@keyframes viewIn { from { opacity: 0; } to { opacity: 1; } }
 .nav__links a.is-active { color: var(--pink); opacity: 1; }
 
 /* =========================================
@@ -771,6 +884,18 @@ h3 { font-size: 1.4rem; }
   transition: transform .25s var(--ease), background .25s var(--ease);
 }
 .whatsapp-float:hover { transform: translateY(-3px) scale(1.05); background: #22c15e; }
+
+.instagram-float {
+  position: fixed; right: 22px; bottom: 162px; z-index: 90;
+  display: flex; align-items: center; justify-content: center;
+  width: 54px; height: 54px;
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b 55%, #6228d7);
+  color: #fff !important;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  transition: transform .25s var(--ease), filter .25s var(--ease);
+}
+.instagram-float:hover { transform: translateY(-3px) scale(1.05); filter: brightness(1.1); }
 
 .status-float {
   position: fixed; left: 22px; bottom: 22px; z-index: 90;
@@ -810,8 +935,7 @@ h3 { font-size: 1.4rem; }
   border: 1px dashed rgba(245,237,228,.2);
 }
 .map-consent p { max-width: 340px; font-size: .92rem; color: var(--cream-2); margin: 0; }
-.map-wrap.ok .map-consent,
-.reservas__wrap.ok .map-consent { display: none; }
+.map-wrap.ok .map-consent { display: none; }
 
 /* =========================================
    BANNER DE COOKIES
@@ -850,6 +974,14 @@ h3 { font-size: 1.4rem; }
 .legal ul { padding-left: 22px; }
 .legal .pending { color: var(--pink); font-style: italic; }
 .legal .map-link { color: var(--pink); font-weight: 500; }
+.legal a { color: var(--pink); }
+.legal__updated { color: var(--muted); font-size: .82rem; letter-spacing: .02em; margin: -6px 0 22px; }
+.legal .tablewrap { overflow-x: auto; margin: 10px 0 18px; border: 1px solid rgba(212,166,189,.18); border-radius: var(--radius); }
+.legal table { width: 100%; border-collapse: collapse; min-width: 480px; }
+.legal table th, .legal table td { text-align: left; padding: 10px 14px; font-size: .9rem; border-bottom: 1px solid rgba(212,166,189,.15); }
+.legal table th { color: var(--pink); font-weight: 500; font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; }
+.legal table td { color: var(--cream-2); font-weight: 300; }
+.legal table tr:last-child td { border-bottom: none; }
 .legal-links {
   margin-top: 20px;
   display: flex; gap: 8px 18px; justify-content: center; flex-wrap: wrap;

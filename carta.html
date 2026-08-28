@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carta · AURA Brunch & Specialty Coffee · Ruzafa, Valencia</title>
+  <meta name="description" content="Carta de AURA: brunch, huevos, sandwiches, tostas, bowls, empanadas, dulces, café de especialidad y bebidas. Ruzafa, Valencia." />
+  <!-- rel="canonical" pendiente: añadir cuando se confirme el dominio definitivo -->
+  <link rel="alternate" hreflang="es" href="carta.html" />
+  <link rel="alternate" hreflang="en" href="en-carta.html" />
+  <link rel="alternate" hreflang="x-default" href="carta.html" />
+  <meta property="og:title" content="Carta · AURA Brunch & Specialty Coffee · Ruzafa, Valencia" />
+  <meta property="og:description" content="Carta de AURA: brunch, huevos, sandwiches, tostas, bowls, empanadas, dulces, café de especialidad y bebidas. Ruzafa, Valencia." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:image" content="/assets/hero-poster.jpg" />
+  <!-- og:url pendiente: añadir la URL absoluta cuando se confirme el dominio -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Carta · AURA Brunch & Specialty Coffee · Ruzafa, Valencia" />
+  <meta name="twitter:description" content="Carta de AURA: brunch, huevos, sandwiches, tostas, bowls, empanadas, dulces, café de especialidad y bebidas. Ruzafa, Valencia." />
+  <meta name="twitter:image" content="/assets/hero-poster.jpg" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "AURA",
+    "description": "Brunch y café de especialidad en el barrio de Ruzafa, Valencia.",
+    "image": "/assets/hero-poster.jpg",
+    "telephone": "+34612422574",
+    "servesCuisine": ["Brunch", "Café de especialidad"],
+    "priceRange": "€€",
+    "hasMenu": "carta.html",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Valencia",
+      "addressRegion": "Comunidad Valenciana",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.4640145,
+      "longitude": -0.366011
+    },
+    "openingHours": ["Mo-Su 09:00-16:00"],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "https://schema.org/Monday", "https://schema.org/Tuesday", "https://schema.org/Wednesday",
+        "https://schema.org/Thursday", "https://schema.org/Friday", "https://schema.org/Saturday", "https://schema.org/Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "16:00"
+    },
+    "sameAs": ["https://www.instagram.com/aura_vlc/"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__logo" aria-label="AURA inicio">
+      <svg viewBox="0 0 120 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <text x="60" y="36" text-anchor="middle" font-family="Dancing Script, cursive" font-size="34" font-weight="700" fill="currentColor">AU.RA</text>
+      </svg>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="carta.html" class="is-active">Carta</a>
+      <a href="galeria.html">Galería</a>
+      <a href="talleres.html">Talleres</a>
+      <a href="visitanos.html">Cómo llegar</a>
+    </nav>
+    <div class="nav__right">
+      <a href="reservas.html" class="nav__cta">Reservar</a>
+      <div class="nav__lang">
+        <span class="is-current">ES</span><span class="nav__lang-sep">/</span><a href="en-carta.html" id="langSwitch" aria-label="Switch to English">EN</a>
+      </div>
+      <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="carta" class="section carta">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Slow food · comida consciente</p>
+          <h2>Nuestra carta</h2>
+          <p class="lede">Todo elaborado en el momento, con ingredientes locales y masa madre fermentada 24 h.</p>
+        </header>
+
+        <div class="menu">
+          <div class="menu__tabs" role="tablist">
+            <!-- BAKED:CARTA_TABS:START -->
+          <button class="menu__tab is-active" data-tab="brunch" role="tab">Brunch</button>
+            <button class="menu__tab" data-tab="huevos" role="tab">Huevos</button>
+            <button class="menu__tab" data-tab="ensaladas" role="tab">Ensaladas</button>
+            <button class="menu__tab" data-tab="sandwiches" role="tab">Sandwiches</button>
+            <button class="menu__tab" data-tab="tostas" role="tab">Tostas</button>
+            <button class="menu__tab" data-tab="bowls-pancakes" role="tab">Bowls &amp; pancakes</button>
+            <button class="menu__tab" data-tab="empanadas" role="tab">Empanadas</button>
+            <button class="menu__tab" data-tab="dulces" role="tab">Dulces</button>
+            <button class="menu__tab" data-tab="cafe" role="tab">Café</button>
+            <button class="menu__tab" data-tab="bebidas" role="tab">Bebidas</button>
+          <!-- BAKED:CARTA_TABS:END -->
+          </div>
+
+          <!-- BAKED:CARTA_PANELS:START -->
+          <div class="menu__panel is-active" data-panel="brunch"><div class="menu__intro"><strong>Brunch</strong><span>Cocina abierta todos los días hasta las 16:00.</span></div><div class="menu__cols"><div class="menu__col"><p class="menu__cat">Menús</p><div class="menu__item"><div class="menu__name">Menú Aura <span class="price">19,90€</span></div><p>Elección de plato + bebida (zumo de naranja o agua Font Vella 33cl / kombucha +4 € / Aperol Spritz +5,90 €) + café con leche o infusión + dulce a elección. Promo: 2 por 34,90 €.</p></div><div class="menu__item"><div class="menu__name">Menú Eggs <span class="price">15,90€</span></div><p>Elección de huevos + bebida + café con leche o infusión + dulce a elección. Promo: 2 por 24,90 €.</p></div><div class="menu__item"><div class="menu__name">Menú Start <span class="price">11,90€</span></div><p>Elección de tosta (vegana o espinacas) + bebida + café con leche o infusión. Promo: 2 por 19,90 €.</p></div></div><div class="menu__col"><p class="menu__cat">Platos</p><div class="menu__item"><div class="menu__name">Patagonia Grill <span class="price">13,90€</span></div><p>Roast beef, dos huevos fritos, aguacate, ensalada de quinoa y pico de gallo con alubias. (1,2)</p></div><div class="menu__item"><div class="menu__name">Full English <span class="price">13,90€</span></div><p>Dos huevos fritos, salchicha, bacon, morcilla, alubias en salsa de tomate, champiñones, tomate asado y pan de masa madre tostado. (1,2,9)</p></div><div class="menu__item"><div class="menu__name">California Benedict <span class="price">12,90€</span></div><p>Huevos pochados sobre brioche tostado, salmón curado de la casa, espinacas salteadas y verduras. (1,4,8,9)</p></div><div class="menu__item"><div class="menu__name">Tulum Rancheros <span class="price">12,90€</span></div><p>Huevos rancheros picantes, pulled pork, alubias, pico de gallo y tortillas. (1,2)</p></div><div class="menu__item"><div class="menu__name">Bali Vegano <span class="price">12,50 €</span></div><p>Tosta de hummus con aguacate, tomates secos, tofu especiado, espinacas salteadas, tomates cherry y verduras de temporada. (2,3,9)</p></div></div></div></div>
+          <div class="menu__panel" data-panel="huevos"><div class="menu__intro"><strong>Huevos</strong><span>Servidos con pan de masa madre 100% integral · obrador local · fermentación 24 h.</span></div><div class="menu__cols"><div class="menu__col"><div class="menu__item"><div class="menu__name">Super Proteico · Keto <span class="price">11,90€</span></div><p>Dos huevos revueltos, salmón curado y aguacate. (1,4)</p></div><div class="menu__item"><div class="menu__name">Huevos a la Española <span class="price">9,90€</span></div><p>Dos huevos fritos con jamón serrano. (1,2,9)</p></div><div class="menu__item"><div class="menu__name">Huevos Calpe <span class="price">9,90€</span></div><p>Dos huevos fritos, espinacas salteadas, aguacate y bacon crujiente. (1,9)</p></div><div class="menu__item"><div class="menu__name">Huevos Turcos <span class="price">8,90€</span></div><p>Dos huevos pochados sobre yogur griego cremoso, aceite de guindilla y ajo. (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Tortilla Francesa <span class="price">10,90€</span></div><p>Tortilla extra jugosa con espinacas frescas, champiñones salteados y virutas de parmesano. (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Shakshuka <span class="price">9,90 €</span></div><p>Dos huevos pochados en salsa de tomate especiada con cebolla y pimientos asados. (1,2,9)</p></div></div></div></div>
+          <div class="menu__panel" data-panel="ensaladas"><div class="menu__cols"><div class="menu__col"><div class="menu__item"><div class="menu__name">Mediterránea <span class="price">10,90€</span></div><p>Atún, mezclum, zanahoria, cebolla encurtida, huevo frito, tomates cherry y queso feta. Crema de aguacate, aceite de oliva, tabasco y limón. (1,2,4,8,9)</p></div><div class="menu__item"><div class="menu__name">Proteica Vegana <span class="price">9,90€</span></div><p>Tofu especiado salteado, quinoa, rúcula, tomates cherry y espárragos. Hummus de garbanzo, aceite de oliva y limón. (3,9)</p></div><div class="menu__item"><div class="menu__name">Power <span class="price">11,90€</span></div><p>Roast beef, quinoa, rúcula, tomates cherry y cebolla encurtida. Salsa de rábano picante (mayonesa, rábano picante y tabasco). (2,6,8,9)</p></div></div></div></div>
+          <div class="menu__panel" data-panel="sandwiches"><div class="menu__intro"><strong>Sandwiches</strong><span>Bagel · Brioche — el precio depende del relleno.</span></div><div class="menu__cols"><div class="menu__col"><div class="menu__item"><div class="menu__name">Caprese <span class="price">13,80€</span></div><p>Burrata cremosa, pesto casero, rúcula y tomates cherry salteados con ajo, mantequilla y vinagre balsámico. (8,9,10)</p></div><div class="menu__item"><div class="menu__name">Roast Beef <span class="price">13,90€</span></div><p>Roast beef, huevo frito, queso cheddar, cebolla roja encurtida, rúcula y salsa de rábano picante. (1,6,8,9)</p></div><div class="menu__item"><div class="menu__name">Pulled Pork <span class="price">11,80€</span></div><p>Cerdo desmechado con salsa barbacoa, huevo frito, queso cheddar y cebolla caramelizada. (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Pollo Teriyaki <span class="price">10,50€</span></div><p>Pollo desmechado con salsa teriyaki, queso cheddar, cebolla caramelizada, rúcula y huevo frito. (1,2,8,9)</p></div><div class="menu__item"><div class="menu__name">Salmón &amp; Aguacate <span class="price">10,50€</span></div><p>Salmón curado, aguacate laminado y salsa tártara casera. (1,4,6,8,9)</p></div><div class="menu__item"><div class="menu__name">Huevos &amp; Bacon <span class="price">9,50€</span></div><p>Huevos revueltos, bacon crujiente, queso Edam y tomate rallado. (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Veggie Aura <span class="price">8,90€</span></div><p>Huevo frito, queso Edam, tomates cherry salteados, rúcula, cebolla encurtida y salsa tártara casera. (1,6,8,9)</p></div><div class="menu__item"><div class="menu__name">Serrano <span class="price">8,90 €</span></div><p>Jamón serrano premium, tomate rallado, rúcula y AOVE. (2,9)</p></div></div></div></div>
+          <div class="menu__panel" data-panel="tostas"><div class="menu__intro"><strong>Tostas</strong><span>Obrador local — fermentación natural. Pan sin gluten +1,00 €.</span></div><div class="menu__cols"><div class="menu__col"><div class="menu__item"><div class="menu__name">Salmón Ahumado &amp; Aguacate <span class="price">9,90€</span></div><p>Salmón curado de la casa, manzana verde, aguacate y salsa tártara casera. (1,4,6,8,9)</p></div><div class="menu__item"><div class="menu__name">Burrata <span class="price">10,90€</span></div><p>Burrata italiana, pesto casero, rúcula y tomates cherry salteados con ajo, mantequilla y vinagre balsámico. (8,9,10)</p></div><div class="menu__item"><div class="menu__name">Huevos Revueltos <span class="price">7,90€</span></div><p>Huevos revueltos, aguacate, pipas de calabaza y de girasol. (1,9)</p></div><div class="menu__item"><div class="menu__name">Valen · Vegana <span class="price">6,90€</span></div><p>Hummus de garbanzo, aguacate y tomates cherry salteados con tomillo y semillas. (2,9)</p></div><div class="menu__item"><div class="menu__name">Espinacas <span class="price">6,90€</span></div><p>Base de espinacas salteadas, huevos fritos, queso feta y aceite de guindilla. (1,8,2)</p></div><div class="menu__item"><div class="menu__name">Jamón Serrano <span class="price">6,50€</span></div><p>Jamón serrano, tomate rallado y AOVE. (9)</p></div><div class="menu__item"><div class="menu__name">Energética <span class="price">5,90€</span></div><p>Mantequilla de cacahuete, plátano y sirope de agave. (9,12)</p></div><div class="menu__item"><div class="menu__name">Tomate &amp; AOVE <span class="price">2,80€</span></div><p>Tomate rallado y AOVE. (9)</p></div></div><div class="menu__col"><p class="menu__cat">Tostas francesas (pan brioche)</p><div class="menu__item"><div class="menu__name">Proteica <span class="price">12,90€</span></div><p>Huevos revueltos, bacon y sirope sobre brioche caramelizado con canela. (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Con Fruta <span class="price">11,90 €</span></div><p>Fruta de temporada y sirope de arce sobre brioche caramelizado con canela. (1,8,9)</p></div></div></div></div>
+          <div class="menu__panel" data-panel="bowls-pancakes"><div class="menu__cols"><div class="menu__col"><p class="menu__cat">Pancakes (sin gluten)</p><div class="menu__item"><div class="menu__name">Fruta y Sirope <span class="price">8,90€</span></div><p>Fruta de temporada y sirope de arce. (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Plátano y Mantequilla de Cacahuete <span class="price">7,90€</span></div><p>Plátano, mantequilla de cacahuete y sirope de arce. (1,8,9,10)</p></div><div class="menu__item"><div class="menu__name">Huevos Revueltos &amp; Bacon <span class="price">9,90€</span></div><p>Huevos revueltos, bacon y sirope de arce. (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Nutella / DDL / Pistacho / Ganache de chocolate <span class="price">7,90 €</span></div></div></div><div class="menu__col"><p class="menu__cat">Bowls</p><div class="menu__item"><div class="menu__name">Açaí <span class="price">7,90 € / 11,90 €</span></div><p>Açaí orgánico, plátano, frutos rojos, granola casera, chips de chocolate, paçoca y mantequilla de cacahuete. Sin gluten. (10,12)</p></div><div class="menu__item"><div class="menu__name">Chia Pudding <span class="price">7,90€</span></div><p>Semillas de chía con frutos rojos, yogur de coco vegano, coco rallado y mermelada casera de fresa.</p></div><div class="menu__item"><div class="menu__name">Porridge <span class="price">7,90€</span></div><p>Avena integral sin gluten, leche de avena, plátano, chips de chocolate y sirope de agave.</p></div><div class="menu__item"><div class="menu__name">Yogur Griego <span class="price">4,50 € / 7,90 €</span></div><p>Yogur griego, fruta de temporada, granola casera y sirope de agave. Yogur vegano +1,00 €. (8,10,12)</p></div><div class="menu__item"><div class="menu__name">Frutas Frescas <span class="price">3,90 € / 5,90 €</span></div><p>Macedonia de fruta fresca de temporada.</p></div></div></div></div>
+          <div class="menu__panel" data-panel="empanadas"><div class="menu__cols"><div class="menu__col"><p class="menu__cat">Veggies &amp; vegan</p><div class="menu__item"><div class="menu__name">Tofu y Verduras <span class="price">3,90 € cada una</span></div><p>Tofu fresco, leche de coco, calabacín, puerro y zanahoria. (3,9,2)</p></div><div class="menu__item"><div class="menu__name">Cabra y Nuez <span class="price">3,90 € cada una</span></div><p>Queso mozzarella, queso de cabra y nuez. (8,10,9,2)</p></div><div class="menu__item"><div class="menu__name">Espinacas y Queso <span class="price">3,90 € cada una</span></div><p>Espinacas frescas, mozzarella y bechamel. (8,9,2)</p></div><div class="menu__item"><div class="menu__name">Caprese <span class="price">3,90 € cada una</span></div><p>Mozzarella, tomate fresco y albahaca. (8,9,2)</p></div><div class="menu__item"><div class="menu__name">Humita <span class="price">3,90 € cada una</span></div><p>Maíz dulce, pimiento rojo y bechamel. (8,9,2)</p></div><div class="menu__item"><div class="menu__name">Cebolla y Queso <span class="price">3,90 € cada una</span></div><p>Mozzarella, cebolla y orégano. (8,9,2)</p></div></div><div class="menu__col"><p class="menu__cat">Proteínas</p><div class="menu__item"><div class="menu__name">Atún <span class="price">3,90 € cada una</span></div><p>Atún, cebolla y huevo. (8,4,1,9,2)</p></div><div class="menu__item"><div class="menu__name">BBQ Ribs <span class="price">3,90 € cada una</span></div><p>Pulled pork, cebolla, pimiento y salsa barbacoa. (3,9,2)</p></div><div class="menu__item"><div class="menu__name">Pollo <span class="price">3,90 € cada una</span></div><p>Pechuga de pollo, cebolla y pimientos rojos. (8,9,2)</p></div><div class="menu__item"><div class="menu__name">Roast Beef a Cuchillo <span class="price">3,90 € cada una</span></div><p>Black Angus, cebolla y pimientos rojos. (8,9,2)</p></div><div class="menu__item"><div class="menu__name">Carne Picante <span class="price">3,90 € cada una</span></div><p>Ternera, cebolla, pimientos rojos y cayena. (8,9,2)</p></div><div class="menu__item"><div class="menu__name">Roast Beef &amp; Provolone <span class="price">3,90 € cada una</span></div><p>Roast beef, queso provolone y cebolla. (8,1,9,2)</p></div><div class="menu__item"><div class="menu__name">Pollo Picante <span class="price">3,90 € cada una</span></div><p>Pechuga de pollo, cebolla, pimientos rojos y cayena. (8,9,2)</p></div><div class="menu__item"><div class="menu__name">Jamón y Queso <span class="price">3,90 € cada una</span></div><p>Mozzarella, jamón york, sal y pimienta. (8,9,2)</p></div></div></div></div>
+          <div class="menu__panel" data-panel="dulces"><div class="menu__cols"><div class="menu__col"><p class="menu__cat">Tartas</p><div class="menu__item"><div class="menu__name">Tarta húmeda de chocolate <span class="price">5,50€</span></div><p>Con café, rellena de dulce de leche. (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Tarta de limón con merengue italiano <span class="price">4,90€</span></div><p> (1,8,9,10)</p></div><div class="menu__item"><div class="menu__name">Sablé de manzana <span class="price">4,90€</span></div><p> (1,9,10)</p></div><div class="menu__item"><div class="menu__name">Brownie <span class="price">3,60€</span></div><p> (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Carrot cake <span class="price">4,50€</span></div><p> (1,8,9,10)</p></div><div class="menu__item"><div class="menu__name">Banana bread <span class="price">3,50€</span></div><p> (1,8,9,10)</p></div><div class="menu__item"><div class="menu__name">Bizcocho de limón <span class="price">3,50€</span></div><p> (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Bizcocho de arándanos y yogur <span class="price">3,50€</span></div><p> (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Chocolate belga 70% y trigo sarraceno <span class="price">4,80€</span></div></div><div class="menu__item"><div class="menu__name">Red velvet y chocolate blanco belga <span class="price">3,50€</span></div><p> (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Avena (sin gluten) <span class="price">3,50€</span></div><p>Chocolate y mantequilla de cacahuete. (10,12)</p></div><div class="menu__item"><div class="menu__name">Chispas de chocolate <span class="price">3,40€</span></div><p> (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Oreo <span class="price">3,80€</span></div><p> (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Pistacho <span class="price">4,80€</span></div><p> (1,8,9,10)</p></div><div class="menu__item"><div class="menu__name">Matcha <span class="price">3,80€</span></div><p> (1,8,9)</p></div></div><div class="menu__col"><p class="menu__cat">Alfajores</p><div class="menu__item"><div class="menu__name">De maicena <span class="price">3,50€</span></div><p>Harina de maíz, coco y dulce de leche. (1,8)</p></div><div class="menu__item"><div class="menu__name">Almendra <span class="price">3,70€</span></div><p>Galleta de almendra, almendras y dulce de leche. (1,8,9,10)</p></div><div class="menu__item"><div class="menu__name">Pistacho y DDL <span class="price">3,80€</span></div><p>Galleta de vainilla y pistacho rellena de dulce de leche. (1,8,9,10)</p></div><div class="menu__item"><div class="menu__name">Chocolate blanco <span class="price">3,80€</span></div><p>Galleta de vainilla rellena de dulce de leche y bañada en chocolate blanco. (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Chocolate negro <span class="price">3,80€</span></div><p>Igual, bañada en chocolate negro. (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Rollo de canela casero <span class="price">3,90€</span></div><p> (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Rollo de cardamomo <span class="price">3,90€</span></div><p> (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Pastafrola <span class="price">4,50€</span></div><p> (1,8,9)</p></div><div class="menu__item"><div class="menu__name">Medialunas argentinas <span class="price">2,80€</span></div><p> (1,8,9)</p></div></div><div class="menu__col"><p class="menu__cat">Bollería</p><div class="menu__item"><div class="menu__name">Croissant de mantequilla <span class="price">2,80 €</span></div><p> (1,8,9)</p></div></div></div></div>
+          <div class="menu__panel" data-panel="cafe"><div class="menu__intro"><strong>Café</strong><span>Espresso preparado con dosis de 18 g. Hazlo frío +0,50 € · leche vegetal +0,30 € · siropes +1,00 €.</span></div><div class="menu__cols"><div class="menu__col"><p class="menu__cat">Espressos</p><div class="menu__item"><div class="menu__name">Espresso <span class="price">1,80€ / 2,20€</span></div></div><div class="menu__item"><div class="menu__name">Americano <span class="price">2,50 / 3,20 €</span></div></div><div class="menu__item"><div class="menu__name">Latte Macchiato XL <span class="price">3,40€</span></div></div><div class="menu__item"><div class="menu__name">Cortado <span class="price">2,40€</span></div></div><div class="menu__item"><div class="menu__name">Flat White <span class="price">2,60€</span></div></div><div class="menu__item"><div class="menu__name">Café con leche <span class="price">2,80 / 3,40 €</span></div></div><div class="menu__item"><div class="menu__name">Capuccino <span class="price">2,80 / 3,40 €</span></div></div><div class="menu__item"><div class="menu__name">Vainilla o Caramel Latte <span class="price">3,20 / 3,90 €</span></div></div><div class="menu__item"><div class="menu__name">Batch Brew <span class="price">2,50 / 3,20 €</span></div></div><div class="menu__item"><div class="menu__name">V60 <span class="price">3,90€</span></div></div><div class="menu__item"><div class="menu__name">Aeropress <span class="price">3,90€</span></div></div></div><div class="menu__col"><p class="menu__cat">Espressos especiales</p><div class="menu__item"><div class="menu__name">Espresso Orange <span class="price">3,90€</span></div></div><div class="menu__item"><div class="menu__name">Espresso Tonic <span class="price">3,90€</span></div></div><div class="menu__item"><div class="menu__name">Cold Brew <span class="price">3,90€</span></div></div><div class="menu__item"><div class="menu__name">Shakerato <span class="price">3,50€</span></div></div><div class="menu__item"><div class="menu__name">Mochaccino <span class="price">3,90€</span></div></div><div class="menu__item"><div class="menu__name">Dirty Chai Latte <span class="price">4,20€</span></div></div><div class="menu__item"><div class="menu__name">Affogato <span class="price">3,90€</span></div></div><div class="menu__item"><div class="menu__name">Espresso Limonada <span class="price">3,90€</span></div></div><div class="menu__item"><div class="menu__name">Frappuccino <span class="price">4,50€</span></div></div><div class="menu__item"><div class="menu__name">Red Velvet Latte <span class="price">2,80 / 3,60 €</span></div></div><div class="menu__item"><div class="menu__name">Chocolate caliente 45% / 70% <span class="price">2,80 / 3,20 / 3,90 €</span></div></div><div class="menu__item"><div class="menu__name">Cúrcuma Latte (jengibre, vainilla) <span class="price">2,80 / 3,60 €</span></div></div><div class="menu__item"><div class="menu__name">Açaí Latte <span class="price">3,50 / 4,10 €</span></div></div><div class="menu__item"><div class="menu__name">Mate Latte <span class="price">3,50 / 4,10 €</span></div></div><div class="menu__item"><div class="menu__name">Spirulina <span class="price">3,50 / 4,10 €</span></div></div><div class="menu__item"><div class="menu__name">Matcha Orange <span class="price">3,60 / 4,10 €</span></div></div><div class="menu__item"><div class="menu__name">Matcha Latte Vainilla <span class="price">3,60 / 4,10 €</span></div></div><div class="menu__item"><div class="menu__name">Matcha Latte <span class="price">2,80 / 3,60 €</span></div></div><div class="menu__item"><div class="menu__name">Matcha Chocolate <span class="price">3,50 / 4,10 €</span></div></div><div class="menu__item"><div class="menu__name">Chai Latte <span class="price">2,80 / 3,60 €</span></div></div></div><div class="menu__col"><p class="menu__cat">Filtros</p><div class="menu__item"><div class="menu__name">Prensa francesa <span class="price">3,90 €</span></div></div></div><div class="menu__col"><p class="menu__cat">Latte &amp; especiados</p><div class="menu__item"><div class="menu__name">Cacao Spicy Chai Latte <span class="price">2,80 / 3,60 €</span></div></div></div></div></div>
+          <div class="menu__panel" data-panel="bebidas"><div class="menu__cols"><div class="menu__col"><div class="menu__item"><div class="menu__name">Blue Protein <span class="price">8,90€</span></div><p>Plátano, fresa, espirulina y proteína vegetal.</p></div><div class="menu__item"><div class="menu__name">Colada Jungle <span class="price">4,50€</span></div><p>Plátano, piña y coco.</p></div><div class="menu__item"><div class="menu__name">Greenpower <span class="price">4,50€</span></div><p>Piña, espinaca, pepino y col rizada.</p></div><div class="menu__item"><div class="menu__name">Vitality <span class="price">4,50€</span></div><p>Plátano y fresa.</p></div><div class="menu__item"><div class="menu__name">Squeeze Nature <span class="price">5,80€</span></div><p>Remolacha, zumo natural, zanahoria y jengibre.</p></div><div class="menu__item"><div class="menu__name">Delightfull <span class="price">4,50€</span></div><p>Açaí, mango, plátano y arándanos.</p></div><div class="menu__item"><div class="menu__name">Berries Paradise <span class="price">4,50€</span></div><p>Fresa, arándanos, cereza y mango.</p></div></div><div class="menu__col"><p class="menu__cat">Zumos y refrescos</p><div class="menu__item"><div class="menu__name">Zumo de naranja natural <span class="price">3,50 / 4,90 €</span></div></div><div class="menu__item"><div class="menu__name">Limonada casera <span class="price">3,50 / 4,90 €</span></div></div><div class="menu__item"><div class="menu__name">Agua sin gas <span class="price">2,00€</span></div></div><div class="menu__item"><div class="menu__name">Agua con gas <span class="price">2,30€</span></div></div><div class="menu__item"><div class="menu__name">Refresco cola <span class="price">3,30€</span></div></div><div class="menu__item"><div class="menu__name">Kombucha (jengibre / berries / menta) <span class="price">4,50€</span></div></div><div class="menu__item"><div class="menu__name">Tónica <span class="price">3,50€</span></div></div><div class="menu__item"><div class="menu__name">Cerveza 1/3 especial <span class="price">3,60€</span></div></div><div class="menu__item"><div class="menu__name">Copa de Chardonnay <span class="price">4,50€</span></div></div><div class="menu__item"><div class="menu__name">Copa de Malbec <span class="price">4,50€</span></div></div><div class="menu__item"><div class="menu__name">Vermut rojo / blanco <span class="price">3,90€</span></div></div><div class="menu__item"><div class="menu__name">Cava Codorníu 200 ml <span class="price">6,90€</span></div></div><div class="menu__item"><div class="menu__name">Mimosa (cava y zumo de naranja) <span class="price">6,90€</span></div></div></div><div class="menu__col"><p class="menu__cat">Cervezas &amp; vinos</p><div class="menu__item"><div class="menu__name">Aperol Spritz <span class="price">8,90 €</span></div></div></div></div></div>
+          <!-- BAKED:CARTA_PANELS:END -->
+
+        <div class="menu__legal">
+          <p class="menu__allergens">
+            <strong>Alérgenos</strong>
+            <span>1 Huevo</span><span>2 Sulfitos</span><span>3 Soja</span><span>4 Pescado</span><span>5 Sésamo</span><span>6 Mostaza</span><span>7 Moluscos</span><span>8 Lácteos</span><span>9 Gluten</span><span>10 Frutos secos</span><span>11 Crustáceos</span><span>12 Cacahuetes</span><span>13 Apio</span><span>14 Altramuz</span>
+          </p>
+          <p class="menu__notes">Productos libres de gluten no aptos para celíacos · Consumo mínimo por hora: 10 € · Los precios pueden variar; la carta oficial se actualiza en local.</p>
+        </div>
+
+        <p class="carta__official">
+          <a class="btn btn--ghost" href="images/carta-aura.pdf" target="_blank" rel="noopener">Ver carta oficial (PDF)</a>
+        </p>
+      </div>
+    </section>
+  
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="footer__logo">AU.RA</div>
+        <p class="footer__sub">Brunch & Specialty Coffee</p>
+      </div>
+      <div>
+        <p class="footer__title">Contacto</p>
+        <a href="tel:+34612422574">612 422 574</a>
+        <a href="https://www.instagram.com/aura_vlc/" target="_blank" rel="noopener">@aura_vlc</a>
+      </div>
+      <div>
+        <p class="footer__title">Horario</p>
+        <p>Todos los días · 9:00 – 16:00</p>
+      </div>
+    </div>
+    <div class="legal-links">
+      <a href="legal.html">Aviso legal</a>
+      <a href="privacidad.html">Política de privacidad</a>
+      <a href="cookies.html">Política de cookies</a>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> AURA · Ruzafa, Valencia</p>
+    </div>
+  </footer>
+
+  <a class="status-float" id="statusFloat" href="visitanos.html" aria-live="polite"><span class="dot"></span><span class="txt">Horario</span></a>
+
+  <a class="whatsapp-float" href="https://wa.me/34612422574" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c-5.4 0-9.8 4.4-9.8 9.8 0 1.7.5 3.4 1.3 4.9L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.4 0 9.8-4.4 9.8-9.8s-4.4-9.8-9.8-9.8zm0 17.9c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.8-1.3-1.3-2.9-1.3-4.5 0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.4-8.2 8.4zm4.5-6.2c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8 1-.2.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.3-.4.1-.1.2-.2.2-.4.1-.2 0-.3 0-.4-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2.9 2.4.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3z"/></svg>
+  </a>
+
+  <a class="reserve-float" href="reservas.html" aria-label="Reservar mesa">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
+    <span>Reservar</span>
+  </a>
+
+  <a class="instagram-float" href="https://www.instagram.com/aura_vlc/" target="_blank" rel="noopener" aria-label="Síguenos en Instagram">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.05" fill="currentColor" stroke="none"/></svg>
+  </a>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <p>Usamos cookies propias (técnicas) y de terceros (Google Maps) para mejorar tu experiencia. Puedes aceptarlas o rechazarlas. <a href="cookies.html">Más información</a>.</p>
+    <div class="cookie-btns">
+      <button class="ck-btn ck-ghost" id="ckReject" type="button">Rechazar</button>
+      <button class="ck-btn" id="ckAccept" type="button">Aceptar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
